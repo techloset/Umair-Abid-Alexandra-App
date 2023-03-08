@@ -1,0 +1,25 @@
+
+*body{
+  overflow-x: hidden;
+}
+
+  /* .slick-arrow.slick-next{
+    background-color: red;
+    position: absolute;
+    top: 0;
+  } */
+  .Prata{
+    font-family: 'Prata'
+  }
+  .back-image{
+    background-image: url(./Image/Group\ 1113.png);
+  }
+  .want{
+    font-family: 'Prata';
+  }
+  .hopes{
+    font-family: 'Open Sans'
+  }
+  .publish{
+    font-family: 'Prata';
+  }
