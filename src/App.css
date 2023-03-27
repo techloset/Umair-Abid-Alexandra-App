@@ -1,25 +1,26 @@
-
-*body{
-  overflow-x: hidden;
-}
-
-  /* .slick-arrow.slick-next{
-    background-color: red;
-    position: absolute;
-    top: 0;
-  } */
-  .Prata{
+  .Prata {
     font-family: 'Prata'
   }
-  .back-image{
-    background-image: url(./Image/Group\ 1113.png);
-  }
-  .want{
+
+
+
+  
+  .want {
     font-family: 'Prata';
   }
-  .hopes{
+
+  .hopes {
     font-family: 'Open Sans'
   }
-  .publish{
+
+  .publish {
+    font-family: 'Prata';
+  }
+
+  .work {
+    font-family: 'Prata';
+  }
+
+  .subscribe {
     font-family: 'Prata';
   }
