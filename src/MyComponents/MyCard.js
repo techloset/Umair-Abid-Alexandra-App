@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { useRef } from 'react';
 export default function SimpleSlider() {
 
+
   const slide = useRef(null);
   const settings = {
     dots: true,
@@ -52,25 +53,28 @@ export default function SimpleSlider() {
 
       <div className=' mt-32 '>
 
-        <div className=" w-[90%] mx-auto px-10 ">
+        <div className="w-[100%] sm:w-[90%] mx-auto px-10  ">
 
 
           <Slider ref={slide} {...settings}>
+            <div className=' px-5'>
 
-            <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5  flex justify-center items-center"  >
-              <img src={Image1} alt="Image1" />
-              <div className='max-sm:flex flex-col justify-center text-white text-[14px]  hidden '>
-                <p>The War of The Worlds</p>
-                <p >H.G. Wells | Collector`s Edition</p>
-                <img src={Frame35} alt="" />
+              <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5  flex justify-center flex-col items-center "  >
+                <img src={Image1} alt="Image1" />
+                <div className='sm:hidden flex-col justify-center text-white text-[14px] flex  '>
+                  <p>The War of The Worlds</p>
+                  <p >H.G. Wells | Collector`s Edition</p>
+                  <img src={Frame35} alt="" />
 
 
+                </div>
               </div>
             </div>
-            <div className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex justify-center items-center" style={{ boxShadow: '0px 32px 56px rgba(55, 64, 73, 0.11)' }} >
+            <div className=' px-5'>
+            <div className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex flex-col justify-center items-center" style={{ boxShadow: '0px 32px 56px rgba(55, 64, 73, 0.11)' }} >
 
               <img src={Image2} alt="Image2" />
-              <div className='max-sm:flex flex-col justify-center text-white text-[14px]  hidden '>
+              <div className='sm:hidden flex-col justify-center text-white text-[14px] flex '>
                 <p>The War of The Worlds</p>
                 <p >H.G. Wells | Collector`s Edition</p>
                 <img src={Frame35} alt="" />
@@ -78,12 +82,13 @@ export default function SimpleSlider() {
 
               </div>
 
-
+</div>
 
             </div>
-            <div className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex justify-center items-center" style={{ boxShadow: '0px 32px 56px rgba(55, 64, 73, 0.11)' }} >
+            <div className='px-5'>
+            <div className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex flex-col justify-center items-center" style={{ boxShadow: '0px 32px 56px rgba(55, 64, 73, 0.11)' }} >
               <img src={Image3} alt="Image3" />
-              <div className='max-sm:flex flex-col justify-center text-white text-[14px]  hidden '>
+              <div className='sm:hidden flex-col justify-center text-white text-[14px]  flex '>
                 <p>The War of The Worlds</p>
                 <p >H.G. Wells | Collector`s Edition</p>
                 <img src={Frame35} alt="" />
@@ -91,25 +96,28 @@ export default function SimpleSlider() {
 
               </div>
             </div>
-            <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex justify-center items-center" style={{ boxShadow: '0px 32px 56px rgba(55, 64, 73, 0.11)' }} >
+            </div>
+            <div className='px-5'>
+            <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex justify-center flex-col items-center" style={{ boxShadow: '0px 32px 56px rgba(55, 64, 73, 0.11)' }} >
               <img src={Image1} alt="Iamge1" />
-              <div className='max-sm:flex flex-col justify-center text-white text-[14px]  hidden '>
+              <div className='sm:hidden flex-col justify-center text-white text-[14px]  flex '>
                 <p>The War of The Worlds</p>
                 <p >H.G. Wells | Collector`s Edition</p>
                 <img src={Frame35} alt="" />
 
 
               </div>
+            </div>
             </div>
           </Slider>
         </div>
       </div>
       <div className='flex flex-col center'>
         <div className='flex justify-center items-center'>
-          <p className='work absolute top-[-30%] md:top-[-25%] flex justify-center items-center left-[10%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] '>FEATURED <span className='text-[#7D75D8]'>  WORKS</span></p>
+          <p className='work absolute top-[-25%] sm:top-[-40%] lg:top-[-15%] flex justify-center items-center left-[10%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] '>FEATURED <span className='text-[#7D75D8]'>  WORKS</span></p>
         </div>
 
-        <div className='absolute top-[-10%] flex justify-center items-center right-[2%] max-md:right-[20%] max-md:left-[20%] '>
+        <div className='absolute top-[-10%] sm:top-[-15%] md:top-[-10%] flex justify-center items-center right-[2%] max-md:right-[20%] max-md:left-[20%] '>
 
 
           <button onClick={() => slide?.current?.slickPrev()} className='mx-3'><img src={Arrow2} alt="Arrow2" /></button>
