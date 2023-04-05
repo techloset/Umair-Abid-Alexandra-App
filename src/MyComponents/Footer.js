@@ -6,7 +6,7 @@ import { FaDiscord } from 'react-icons/fa'
 function Footer() {
     return (
         <div>
-            <div className=' flex flex-col justify-center items-center lg:w-[532px]  mx-auto my-52'>
+            <div className=' flex flex-col justify-center items-center lg:w-[532px]  mx-auto mt-[109px] mb-[155px]'>
                 <div>
                     <img src={Group} alt="Group" className='flex justify-center items-center' />
                     <p className='subscribe text-center text-[#21233B] text-[48px] font-[400px]'>SUBSCRIBE</p>
