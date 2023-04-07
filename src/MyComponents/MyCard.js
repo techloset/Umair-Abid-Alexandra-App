@@ -47,7 +47,7 @@ export default function SimpleSlider() {
   return (
     <div className="relative">
       <div className=" mt-32 ">
-        <div className="w-[100%] sm:w-[90%] mx-auto px-10  ">
+        <div className="w-[100%] sm:w-[90%] mx-auto sm:px-10 ">
           <Slider ref={slide} {...settings}>
             <div className=" px-5">
               <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5  flex justify-center flex-col items-center ">
@@ -103,8 +103,8 @@ export default function SimpleSlider() {
       </div>
       <div className="flex flex-col center">
         <div className="flex justify-center items-center">
-          <p className="work absolute top-[-25%] sm:top-[-40%] lg:top-[-15%] flex justify-center items-center left-[10%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] ">
-            FEATURED <span className="text-[#7D75D8]"> WORKS</span>
+          <p className="work absolute top-[-25%] sm:top-[-40%] lg:top-[-15%] flex justify-center items-center left-[10%] lg:left-[9%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] ">
+            FEATURED <span className="text-[#7D75D8] pl-3"> WORKS</span>
           </p>
         </div>
 

@@ -9,13 +9,13 @@ const [open, setOpen] = useState(false);
  return (
     <header className="">
 
-      <div className="flex items-center justify-between  mx-1 sm:mx-[10px] lg:mx-[96px]  max-md:flex-wrap ">
-        <img src={Frame1} alt="" className="mt-8 md:mt-12 mb-[44px] max-sm:w-[50%] " />
+      <div className="flex items-center justify-between  ml-4 mx-1 sm:mx-[10px] lg:mx-[96px]  max-md:flex-wrap ">
+        <img src={Frame1} alt="" className="mt-8 md:mt-12 mb-[44px]  max-sm:w-[40%] " />
         <div className="md:hidden  flex gap-2 sm:gap-5  mr-2">
 
-         <button className="text-[12px] font-bold text-[#7D75D8] w-[100px] sm:w-[124px] h-[26px] sm:h-[38px] rounded-[4px] bg-white">SELECT WALLET</button>
+         <button className="text-[12px] font-bold text-[#7D75D8] w-[124px] h-[38px] rounded-[4px] bg-white">SELECT WALLET</button>
           <img src={menu}
-            className=" cursor-pointer "
+            className=" cursor-pointer w-[19px] h-[18px] mt-3"
             onClick={() => setOpen(!open)}
           />
         </div>
