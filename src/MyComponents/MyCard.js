@@ -12,7 +12,7 @@ import { useRef } from "react";
 export default function SimpleSlider() {
   const slide = useRef(null);
   const settings = {
-    dots: true,
+    dots: false,
     // infinite: true,
     // speed: 500,
     slidesToShow: 3,

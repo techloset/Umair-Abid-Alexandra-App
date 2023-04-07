@@ -1,21 +1,19 @@
 import Frame1 from "../image/Frame 00.png";
-import { CgMenuBoxed } from "react-icons/cg";
+
 import menu from '../image/Group1010.png'
 import { useState } from "react";
 import React from "react";
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  function dropDown() {
-    setOpen(!open)
-  }
-  return (
+const [open, setOpen] = useState(false);
+
+ return (
     <header className="">
 
       <div className="flex items-center justify-between  mx-1 sm:mx-[10px] lg:mx-[96px]  max-md:flex-wrap ">
         <img src={Frame1} alt="" className="mt-8 md:mt-12 mb-[44px] max-sm:w-[50%] " />
         <div className="md:hidden  flex gap-2 sm:gap-5  mr-2">
 
-         <button className="text-[12px] font-bold text-[#7D75D8] w-[100px] sm:w-[124px] h-[26px] sm:h-[38px] bg-white">SELECT WALLET</button>
+         <button className="text-[12px] font-bold text-[#7D75D8] w-[100px] sm:w-[124px] h-[26px] sm:h-[38px] rounded-[4px] bg-white">SELECT WALLET</button>
           <img src={menu}
             className=" cursor-pointer "
             onClick={() => setOpen(!open)}
@@ -39,7 +37,7 @@ const Navbar = () => {
            <li className="text-white text-[20px] font-semibold">About</li>
            <li className="text-white text-[20px] font-semibold ">Autors</li>
            <li className="text-white text-[20px] font-semibold">Team</li>
-           <li className="text-[#7D75D8] px-7 py-4 text-[16px] max-md:hidden font-bold whitespace-nowrap bg-white">CONNECT WALLET</li>
+           <li className="text-[#7D75D8] px-7 py-4 text-[16px] max-md:hidden rounded-[8px] font-bold whitespace-nowrap bg-white">CONNECT WALLET</li>
 
            </div>
           </ul>

@@ -6,15 +6,15 @@ import { FaDiscord } from 'react-icons/fa'
 function Footer() {
     return (
         <div>
-            <div className=' flex flex-col justify-center items-center lg:w-[532px]  mx-auto mt-[109px] mb-[155px]'>
+            <div className=' flex flex-col justify-center items-center lg:w-[532px]  mx-auto mt-[109px] mb-[126px] sm:mb-[155px]'>
                 <div>
                     <img src={Group} alt="Group" className='flex justify-center items-center' />
                     <p className='subscribe text-center text-[#21233B] text-[48px] font-[400px]'>SUBSCRIBE</p>
                     <p className='text-[#303365] font-sans text-[20px] text-center mx-2 font-[400px]'>Duis non orci justo. Nulla lobortis, elit ac imperdiet</p>
                 </div>
                 <div className='mt-8 px-[10px]  flex justify-center items-center'>
-                    <input type="text" placeholder='Enter Your Email Address' className='placeholder:text-[16px] font-normal px-[10px] md:px-[30px]  border rounded-md w-[200px] md:w-[393px] h-[52px]' />
-                    <button className='bg-[#7D75D8]  w-[100px] md:w-[139px] h-[52px] text-white  rounded-md '>Send</button>
+                    <input type="text" placeholder='Enter Your Email Address' className='placeholder:text-[16px] font-normal px-[10px] md:px-[30px]  border rounded-[8px] w-[200px] sm:w-[393px] h-[45px] sm:h-[52px]' />
+                    <button className='bg-[#7D75D8]  w-[100px] sm:w-[139px] h-[45px] sm:h-[52px] text-white  rounded-[8px] '>Send</button>
                 </div>
             </div>
             <div className='w-[100%] mx-auto bg-[#1f2937] flex flex-col  sm:flex-row  justify-between px-[2%] sm:px-[10%]'>
