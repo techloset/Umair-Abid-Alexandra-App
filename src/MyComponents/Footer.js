@@ -13,8 +13,8 @@ function Footer() {
                     <p className='text-[#303365] font-sans text-[20px] text-center mx-4 font-[400px]'>Duis non orci justo. Nulla lobortis, elit ac imperdiet</p>
                 </div>
                 <div className='mt-8 px-[10px]  flex justify-center items-center'>
-                    <input type="text" placeholder='Enter Your Email Address' className='placeholder:text-[16px] font-normal px-[10px] md:px-[30px]  border rounded-[8px] w-[227px] sm:w-[393px] h-[45px] sm:h-[52px]' />
-                    <button className='bg-[#7D75D8]  w-[85px] sm:w-[139px] h-[45px] sm:h-[52px] text-white text-[14px]   rounded-[8px] '>SEND</button>
+                    <input type="text" placeholder='Enter Your Email Address' className='placeholder:text-[16px] hello font-normal px-[10px] md:px-[30px]  border rounded-l-[8px] w-[227px] sm:w-[393px] h-[45px] sm:h-[52px]' />
+                    <button className=' bg-[#7D75D8]  w-[85px] sm:w-[139px] h-[45px] sm:h-[52px] text-white text-[14px]  rounded-[8px] '>SEND</button>
                 </div>
             </div>
             <div className='w-[100%] mx-auto bg-[#0E0F1E] flex flex-col  sm:flex-row  justify-between px-[2%] sm:px-[10%]'>

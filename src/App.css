@@ -4,7 +4,7 @@
 
 
 
-  
+
   .want {
     font-family: 'Prata';
   }
@@ -22,6 +22,29 @@
   .subscribe {
     font-family: 'Prata';
   }
-  .discover{
+
+  .discover {
     font-family: 'Prata';
   }
+
+  @media only screen and (max-width: 450px) {
+    .bottom {
+      padding-left: 1px;
+      padding-right: 1px;
+     
+ 
+
+    }
+
+    
+
+    .slick-track {
+      transform: none !important;
+      /* background-color: red */
+
+    }
+  }
+.hello{
+  border-right: hidden;
+ 
+}

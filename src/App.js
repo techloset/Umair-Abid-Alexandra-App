@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App ">
 
-      <div className='md:bg-web-image bg-mobile-image max-sm:bg-center bg-cover bg-no-repeat'>
+      <div className='md:bg-web-image bg-mobile-image  bg-cover bg-no-repeat'>
         <Navbar />
         <Hero />
       </div>

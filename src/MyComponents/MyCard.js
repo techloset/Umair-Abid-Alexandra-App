@@ -28,15 +28,15 @@ export default function SimpleSlider() {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
+          // initialSlide: 2,s
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 450,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -49,9 +49,9 @@ export default function SimpleSlider() {
       <div className=" mt-32 ">
         <div className="w-[100%] sm:w-[90%] mx-auto sm:px-10 ">
           <Slider ref={slide} {...settings}>
-            <div className=" px-5">
+            <div className="bottom  px-5">
               <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5  flex justify-center flex-col items-center ">
-                <img src={Image1} alt="Image1" />
+                <img src={Image1} alt="Image1" className="max-sm:w-[280px] max-sm:h-[300px]" />
                 <div className="sm:hidden flex-col justify-center text-white text-[14px] flex  ">
                   <p>The War of The Worlds</p>
                   <p>H.G. Wells | Collector`s Edition</p>
@@ -64,11 +64,11 @@ export default function SimpleSlider() {
                 className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex flex-col justify-center items-center"
                 style={{ boxShadow: "0px 32px 56px rgba(55, 64, 73, 0.11)" }}
               >
-                <img src={Image2} alt="Image2" />
+                <img src={Image2} alt="Image2"  className="max-sm:w-[280px] max-sm:h-[300px]" />
                 <div className="sm:hidden flex-col justify-center text-white text-[14px] flex ">
                   <p>The War of The Worlds</p>
                   <p>H.G. Wells | Collector`s Edition</p>
-                  <img src={Frame35} alt="" />
+                  <img src={Frame35} alt=""   />
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function SimpleSlider() {
                 className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex flex-col justify-center items-center"
                 style={{ boxShadow: "0px 32px 56px rgba(55, 64, 73, 0.11)" }}
               >
-                <img src={Image3} alt="Image3" />
+                <img src={Image3} alt="Image3" className="max-sm:w-[280px] max-sm:h-[300px]"  />
                 <div className="sm:hidden flex-col justify-center text-white text-[14px]  flex ">
                   <p>The War of The Worlds</p>
                   <p>H.G. Wells | Collector`s Edition</p>
@@ -103,7 +103,7 @@ export default function SimpleSlider() {
       </div>
       <div className="flex flex-col center">
         <div className="flex justify-center items-center">
-          <p className="work absolute top-[-25%] sm:top-[-40%] lg:top-[-15%] flex justify-center items-center left-[10%] lg:left-[9%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] ">
+          <p className="work absolute top-[-20%] sm:top-[-40%] lg:top-[-15%] flex justify-center items-center left-[10%] lg:left-[9%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] ">
             FEATURED <span className="text-[#7D75D8] pl-3"> WORKS</span>
           </p>
         </div>
