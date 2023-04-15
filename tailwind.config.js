@@ -4,11 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-   
+
     extend: {
       backgroundImage: {
-        'web-image': "url('/src/image/Group1113.png')",
-        'mobile-image': "url('/src/image/mobile.png')",
+        'web': "url('/src/image/Group1113.png')",
+        'mobile': "url('/src/image/mobile.png')",
       }
     },
   },

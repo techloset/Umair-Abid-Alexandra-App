@@ -31,7 +31,7 @@ const Navbar = () => {
             className={`text-base text-gray-600 flex-col ${open ? "block" : "hidden"
               } md:flex md:flex-row md:justify-between md:items-center `}
           >
-            <div className="flex flex-col md:flex-row justify-center items-center gap-5 lg:gap-10">
+            <div className="flex flex-col md:flex-row justify-center items-center max-sm:mt-5 gap-5 lg:gap-10">
 
 
               <li className="text-white text-[20px] font-semibold">About</li>

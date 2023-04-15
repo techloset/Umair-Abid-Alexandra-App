@@ -13,8 +13,13 @@ export default function SimpleSlider() {
   const slide = useRef(null);
   const settings = {
     dots: false,
-    // infinite: true,
-    // speed: 500,
+    autoplay: true,
+        autoplaySpeed: 3000,
+    speed: 1000,
+    autoplay: true,
+    infinite: true,
+    
+
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -22,9 +27,11 @@ export default function SimpleSlider() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
+          speed: 1000,
+        
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -32,6 +39,8 @@ export default function SimpleSlider() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          speed: 1000,
+        
           // initialSlide: 2,s
         },
       },
@@ -40,17 +49,22 @@ export default function SimpleSlider() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          
+          
+
         },
       },
     ],
   };
   return (
     <div className="relative">
-      <div className=" mt-32 ">
+      <div className=" mt-[120px] sm:mt-[150px] md:mt-[150px] lg:mt-[120px] ">
+
         <div className="w-[100%] sm:w-[90%] mx-auto sm:px-10 ">
+
           <Slider ref={slide} {...settings}>
-            <div className="bottom  px-5">
-              <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5  flex justify-center flex-col items-center ">
+            <div className=" px-5">
+              <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5  max-sm:mx-[6%]  flex justify-center flex-col items-center ">
                 <img src={Image1} alt="Image1" className="max-sm:w-[280px] max-sm:h-[300px]" />
                 <div className="sm:hidden flex-col justify-center text-white text-[14px] flex  ">
                   <p>The War of The Worlds</p>
@@ -60,38 +74,29 @@ export default function SimpleSlider() {
               </div>
             </div>
             <div className=" px-5">
-              <div
-                className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex flex-col justify-center items-center"
-                style={{ boxShadow: "0px 32px 56px rgba(55, 64, 73, 0.11)" }}
-              >
-                <img src={Image2} alt="Image2"  className="max-sm:w-[280px] max-sm:h-[300px]" />
-                <div className="sm:hidden flex-col justify-center text-white text-[14px] flex ">
-                  <p>The War of The Worlds</p>
-                  <p>H.G. Wells | Collector`s Edition</p>
-                  <img src={Frame35} alt=""   />
-                </div>
-              </div>
-            </div>
-            <div className="px-5">
-              <div
-                className="bg-[#7D75D8]  sm:bg-white shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex flex-col justify-center items-center"
-                style={{ boxShadow: "0px 32px 56px rgba(55, 64, 73, 0.11)" }}
-              >
-                <img src={Image3} alt="Image3" className="max-sm:w-[280px] max-sm:h-[300px]"  />
-                <div className="sm:hidden flex-col justify-center text-white text-[14px]  flex ">
+              <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5 max-sm:mx-[6%]  flex justify-center flex-col items-center ">
+                <img src={Image2} alt="Image1" className="max-sm:w-[280px] max-sm:h-[300px]" />
+                <div className="sm:hidden flex-col justify-center text-white text-[14px] flex  ">
                   <p>The War of The Worlds</p>
                   <p>H.G. Wells | Collector`s Edition</p>
                   <img src={Frame35} alt="" />
                 </div>
               </div>
             </div>
-            <div className="px-5">
-              <div
-                className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5 backdrop-blur-lg flex justify-center flex-col items-center"
-                style={{ boxShadow: "0px 32px 56px rgba(55, 64, 73, 0.11)" }}
-              >
-                <img src={Image1} alt="Iamge1" />
-                <div className="sm:hidden flex-col justify-center text-white text-[14px]  flex ">
+            <div className=" px-5">
+              <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5 max-sm:mx-[6%]  flex justify-center flex-col items-center ">
+                <img src={Image3} alt="Image1" className="max-sm:w-[280px] max-sm:h-[300px]" />
+                <div className="sm:hidden flex-col justify-center text-white text-[14px] flex  ">
+                  <p>The War of The Worlds</p>
+                  <p>H.G. Wells | Collector`s Edition</p>
+                  <img src={Frame35} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className=" px-5">
+              <div className="bg-[#7D75D8] shadow-md border rounded-[8px] p-5 max-sm:mx-[6%]  flex justify-center flex-col items-center ">
+                <img src={Image1} alt="Image1" className="max-sm:w-[280px] max-sm:h-[300px]" />
+                <div className="sm:hidden flex-col justify-center text-white text-[14px] flex  ">
                   <p>The War of The Worlds</p>
                   <p>H.G. Wells | Collector`s Edition</p>
                   <img src={Frame35} alt="" />
@@ -101,14 +106,13 @@ export default function SimpleSlider() {
           </Slider>
         </div>
       </div>
-      <div className="flex flex-col center">
-        <div className="flex justify-center items-center">
-          <p className="work absolute top-[-20%] sm:top-[-40%] lg:top-[-15%] flex justify-center items-center left-[10%] lg:left-[9%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] ">
+      <div className="flex flex-col  center">
+        <div className="flex justify-center  items-center">
+          <p className="work absolute top-[-30%] md:top-[-25%] lg:top-[-20%] flex justify-center items-center left-[10%] lg:left-[9%] max-md:right-[20%] max-md:left-[20%] whitespace-nowrap text-[30px]  sm:text-[40px] text-[#21233B] ">
             FEATURED <span className="text-[#7D75D8] pl-3"> WORKS</span>
           </p>
         </div>
-
-        <div className="absolute top-[-10%] sm:top-[-15%] md:top-[-10%] flex justify-center items-center right-[9%] max-md:right-[20%] max-md:left-[20%] ">
+        <div className="absolute max-md:mt-5 top-[-20%] sm:top-[-20%] md:top-[-20%] lg:top-[-15%] flex justify-center items-center right-[9%] max-md:right-[20%] max-md:left-[20%] ">
           <button onClick={() => slide?.current?.slickPrev()} className="mx-3">
             <img src={Arrow2} alt="Arrow2" />
           </button>
@@ -116,6 +120,7 @@ export default function SimpleSlider() {
             <img src={Arrow1} alt="Arrow1" />
           </button>
         </div>
+
       </div>
     </div>
   );

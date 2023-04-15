@@ -2,12 +2,43 @@
     font-family: 'Prata'
   }
 
-
+.welcome{
+  font-family: 'Prata';
+}
 
 
   .want {
     font-family: 'Prata';
   }
+
+  .slick-arrow.slick-next {
+    display: none !important;
+
+  }
+
+  .slick-arrow.slick-prev {
+    display: none !important;
+
+  }
+
+  .bg-mobile {
+    background-position: center;
+  }
+
+  /* .slick-arrow.slick-next {
+  position: absolute;
+  margin-right: 200px;
+  /* transform: none !important; */
+  /* top: -10%; */
+  /* background-color: red; */
+  /* } */
+  /* .slick-arrow.slick-prev { */
+  /* position: absolute; */
+  /* margin-left: 200px; */
+  /* transform: none !important; */
+  /* top: -10%; */
+  /* background-color: red; */
+  /* } */
 
 
 
@@ -31,20 +62,16 @@
     .bottom {
       padding-left: 1px;
       padding-right: 1px;
-     
- 
+
+
 
     }
 
-    
 
-    .slick-track {
-      transform: none !important;
-      /* background-color: red */
 
-    }
   }
-.hello{
-  border-right: hidden;
- 
-}
+
+  .hello {
+    border-right: hidden;
+
+  }
