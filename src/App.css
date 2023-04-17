@@ -2,9 +2,9 @@
     font-family: 'Prata'
   }
 
-.welcome{
-  font-family: 'Prata';
-}
+  .welcome {
+    font-family: 'Prata';
+  }
 
 
   .want {
@@ -25,21 +25,7 @@
     background-position: center;
   }
 
-  /* .slick-arrow.slick-next {
-  position: absolute;
-  margin-right: 200px;
-  /* transform: none !important; */
-  /* top: -10%; */
-  /* background-color: red; */
-  /* } */
-  /* .slick-arrow.slick-prev { */
-  /* position: absolute; */
-  /* margin-left: 200px; */
-  /* transform: none !important; */
-  /* top: -10%; */
-  /* background-color: red; */
-  /* } */
-
+ 
 
 
   .publish {
@@ -73,5 +59,14 @@
 
   .hello {
     border-right: hidden;
+
+  }
+
+  @media screen and (max-width:450px) {
+    .media {
+      /* position: absolute; */
+      margin-right: 4px;
+width: 320px;    
+    }
 
   }

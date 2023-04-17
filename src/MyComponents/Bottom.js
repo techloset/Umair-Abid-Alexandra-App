@@ -22,9 +22,9 @@ function Bottom() {
         </button>
         <img src={vector} alt=" " className="mt-[30px] sm:mt-[35px] w-[80%] md:mt-[100px] " />
         {/* <img src={Frame7} alt="Frame7" className="mt-[45px] w-[320px] sm:w-[450px] md:w-[590px]" /> */}
-        <p className="welcome max-sm:w-[300px] text-[40px] leading-10 mt-[20px] sm:mt-[30px] md:mt-[50px] sm:text-[48px] text-[#21233B] text-center " >Welcome to the <span className="text-[#7D75D8] ">wall of</span> </p>
-        <img src={Frame} alt="" className="w-[308px]  sm:w-[475] -mt-2" />
-        <p className=" font-normal mt-2 sm:mt-5  mb-[30px] sm:mb-[50px] text-[#303365] text-[24px] leading-[36px] items-center  sm:text-[32px] w-[305px] sm:w-[500px] mx-auto md:w-[718px] font-sans  text-center">
+        <p className="welcome max-sm:w-[300px] text-[40px] leading-[48px] mt-[20px] sm:mt-[30px] md:mt-[50px] sm:text-[48px] text-[#21233B] text-center " >Welcome to the <span className="text-[#7D75D8] ">wall of</span> </p>
+        <img src={Frame} alt="" className="w-[310px]  sm:w-[475] -mt-3 sm:mt-3 mx-auto" />
+        <p className=" font-normal mt-1 sm:mt-5  mb-[30px] sm:mb-[50px] text-[#303365] text-[24px] leading-[36px] sm:leading-[48px] items-center  sm:text-[32px] w-[305px] sm:w-[500px] mx-auto md:w-[718px] font-sans  text-center">
           This is where we tell you at all our  <span className="max-sm:hidden"> <br /> </span>
           hopes and aspirations. <br />
           Behold the wanderer of the literary metaverse.
@@ -65,7 +65,7 @@ function Bottom() {
         </div>
 
         <div className=" sm:max-w-full  md:flex flex-wrap gap-[30px] md:gap-[48px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-center items-center max-xl:mx-5 mx-auto gap-[30px] mt-[40px] sm:mt-5">
+          <div className="flex flex-col md:flex-row justify-center items-center max-xl:mx-5 mx-auto gap-[42px] mt-[40px] sm:mt-5">
             <div className="max-sm:w-[312px]  ">
               <img src={Frame13} alt="Frame13" />
             </div>
@@ -76,7 +76,7 @@ function Bottom() {
               <img src={Frame15} alt="Frame15" />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-around items-center mx-32 lg:mx-auto  gap-[30px] mt-[42px] mb-20 sm:mb-24">
+          <div className="flex flex-col md:flex-row justify-around items-center mx-32 lg:mx-auto  gap-[42px] mt-[42px] mb-20 sm:mb-24">
             <div className="max-sm:w-[312px]  ">
               <img src={Frame16} alt="Frame16" />
             </div>

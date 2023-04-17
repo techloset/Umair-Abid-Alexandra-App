@@ -3,6 +3,8 @@ import Group from '../image/Group 2.png'
 import Alexandra from '../image/alexandria.png'
 import { AiOutlineTwitter } from 'react-icons/ai'
 import { FaDiscord } from 'react-icons/fa'
+import twitter from '../image/twitter2.png'
+import discord from '../image/discord2.png'
 function Footer() {
     return (
         <div>
@@ -37,8 +39,9 @@ function Footer() {
                         </div>
 
                         <div className='max-sm:flex   hidden justify-center items-center pl-2 gap-5 mt-5 '>
-                            <h1 className='text-[16px]  text-[#F6F6F6] font-normal font-sans flex '><AiOutlineTwitter /></h1>
-                            <h1 className='text-[16px]  text-[#F6F6F6] font-normal font-sans flex '><FaDiscord /></h1>
+                            <img src={twitter} className='w-[35px] h-[35px]' />
+                            <img src={discord} className='w-[35px] h-[35px]' />
+
 
                         </div>
                         <div className=' max-sm:flex   hidden  justify-between  px-[5%] mt-5'>
@@ -72,9 +75,9 @@ function Footer() {
                         <h1 className='text-[16px] text-[#F6F6F6] font-normal font-sans '>Authors Submission</h1>
                         <h1 className='text-[16px] text-[#F6F6F6] font-normal font-sans '>Team</h1>
                     </div>
-                    <div className='lg:flex flex-col gap-5 hidden' >
-                        <h1 className='text-[16px] text-[#F6F6F6] font-normal font-sans flex gap-3'><AiOutlineTwitter />Twitter</h1>
-                        <h1 className='text-[16px] text-[#F6F6F6] font-normal font-sans flex gap-3'><FaDiscord />Discord</h1>
+                    <div className='lg:flex flex-col gap-5 hidden ' >
+                        <h1 className='text-[16px] text-[#F6F6F6] font-normal font-sans flex gap-3'><img src={twitter}  className='w-[24px] h-[24px]'/>Twitter</h1>
+                        <h1 className='text-[16px] text-[#F6F6F6] font-normal font-sans flex gap-3'> <img src={discord} className='w-[24px] h-[24px]' /> Discord</h1>
                     </div>
                 </div>
             </div>
